@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    height: 100vh;
+    margin: 0;
+    color: #F9A825;
+    background-color: white;
+    
+    
+
+}
+h1 {font-family: Arial; font-weight: bold; size: 24px;}
+button {background-color:#1976D2; color: white;}
+link {color: #1976D2;}
+
+footer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F9A825;}
