@@ -1,3 +1,11 @@
+header{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 20px;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -5,16 +13,88 @@ body {
     flex-direction: column ;
     height: 100vh;
     margin: 0;
-    color: #F9A825;
-    background-color: white;
+    color: #f1ed09;
+    background-size: 100% 100%;
+background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),radial-gradient(142% 91% at 111% 84%, #EAFF00FF 0%, #001AFFFF 98%);
     
-    
-
 }
+
+#ananas {
+    max-width: 40px;
+    align-items: center;
+}
+
 h1 {font-family: Arial; font-weight: bold; size: 24px;}
-h2{}
+
 button {background-color:#1976D2; color: white;}
 link {color: #1976D2;}
+
+/* Ajoute une bordure et un fond pour rendre la section des tâches plus visible */
+#tasks {
+    width: 80%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0); /* Fond légèrement transparent */
+    border: 1px solid #f1ed09; /* Bordure de couleur jaune */
+    padding: 20px;
+    margin-top: 20px;
+    overflow-y: auto; /* Pour gérer le dépassement si beaucoup de tâches */
+    max-height: 300px; /* Limite la hauteur pour l'affichage */
+}
+
+/* Style pour les éléments de la liste des tâches */
+#tasks li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f1ed09; /* Couleur de fond pour les tâches */
+    color: #000; /* Couleur du texte */
+    font-style: normal; font-family: Arial, sans-serif; size:  12px;
+    border-radius: 5px;
+    list-style: none; /* Supprime les puces */
+}
+
+/* Style pour les tâches complétées (déjà dans le script) */
+#tasks li.completed {
+    text-decoration: line-through;
+    color: #888; /* Couleur plus pâle pour les tâches complétées */
+}
+
+.task-item button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.edit-btn {
+    background-color: #F9A825; /* Couleur jaune */
+    color: #000;
+}
+
+.edit-btn:hover {
+    background-color: #f9a82597;
+}
+
+/* Bouton Compléter */
+.complete-btn {
+    background-color: #4CAF50; /* Couleur verte */
+    color: white;
+}
+
+.complete-btn:hover {
+    background-color: #388E3C;
+}
+
+/* Bouton Supprimer */
+.delete-btn {
+    background-color: #F44336; /* Couleur rouge */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #D32F2F;
+}
 
 footer { 
     display: flex;
